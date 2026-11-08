@@ -4,7 +4,9 @@ int main(void)
 {
     int input;
     scanf("%d", &input);
-    if (90 <= input && input <= 100)
+    if (input > 100)
+        printf("NG");
+    else if (90 <= input && input <= 100)
         printf("AA");
     else if (input >= 80)
         printf("A");
@@ -15,7 +17,7 @@ int main(void)
     else if (input >= 1)
         printf("D");
     else if (input >= 0)
-        printf("D");
+        printf("/");
     else
         printf("NG");
     return 0;
